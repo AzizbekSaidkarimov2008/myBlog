@@ -1,0 +1,101 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container" style="display: flex;
+            justify-content: space-around;">
+        <a class="navbar-brand" href="#">My blog <span class="navbar_brand_text">G'oyalaringiz bilan
+                bo'lishing</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item lilar">
+                    <a class="nav-link alar active" aria-current="page" href="#">Loyiha haqida</a>
+                </li>
+                <li class="nav-item lilar">
+                    <a class="nav-link alar active" href="/admin/category/read">Bo'limlar</a>
+                </li>
+                <li class="nav-item lilar">
+                    <a class="nav-link alar active" href="#">Kirish</a>
+                </li>
+                <li class="nav-item lilar">
+                    <a class="nav-link alar active" href="#">Ro’yhatdan o’tish</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container" style=" margin: 0 !important;margin: auto !important;margin-top: 50px !important;">
+    <div class="row" style="display: flex !important;
+            justify-content: center !important;">
+        {{#if maqola.length}}
+        {{#each maqola}}
+            <div class="col-3" style="margin-right: 50px !important;">
+                <a href="#"><img src="images/{{img}}" alt="" class="img" width="100%"></a>
+            </div>
+            <div class="col-4" style="margin-right: 30px !important;">
+                <div>
+                    <a href="" class="malumot a">{{maqolaTitle}} </a>
+                    <a href="#">
+                        <h2 class="internet">{{maqolaTitle}}</h2>
+                    </a>
+                </div>
+                <div class="posted-on">
+                    <div class="data"><a href="#" class="dataTime a">27.07.2021 </a><span>sanadagi </span><a href="#"
+                            class="a">OybekDev </a><span>maqolasi</span></div>
+                    <p>{{maqolaText}}</p>
+                </div>
+            </div>
+        <div class="col-3 before" style="display: flex;max-width:inherit !important;">
+            <div>
+                <h5 class="maqolalarTitle margin">Tanlangan maqolalar</h5>
+                <a href="#" class="server margin">Menimcha bu eng zo’r server ijarasi</a>
+                <a href="#" class="server1 margin">Dasturlashni o’rganayotganda ko’p uchraydigan savollarga —
+                    javob</a>
+                <a href="#" class="php margin">PHP 8.0 chiqarildi!</a>
+                <a href="#" class="server1 margin">Umumiy Dasturlash Teoriyasining o’rganish qoidalari</a>
+            </div>
+        </div>
+        {{/each}}
+        {{/if}}
+    </div>
+    {{!-- <div class="row" style="display: flex !important;
+            justify-content: center !important;">
+        <div class="col-3" style="margin-right: 50px !important;">
+            <a href="#"><img src="https://myblog.uz/wp-content/uploads/2021/07/00-300x150.png" alt="" class="img"
+                    width="100%"></a>
+        </div>
+        <div class="col-4" style="margin-right: 30px !important;">
+            <div>
+                <a href="#" class="malumot a">AXBOROT TEXNOLOGIYALARI </a> / <a href="#" class="malumot a"> BOSHQA
+                    MAQOLALALR</a> / <a href="#" class="malumot a">MASLAHAT</a>
+                <a href="#">
+                    <h2 class="internet">Haqiqiy IT Bank!</h2>
+                </a>
+            </div>
+            <div class="posted-on">
+                <div class="data"><a href="#" class="dataTime a">17.07.2021 </a><span>sanadagi </span><a href="#"
+                        class="a">Akmal Kadirov </a><span>maqolasi</span></div>
+                <p>Tinkoff – Rossiyaning eng zamonaviy banki hisoblanadi. Rossiyada allaqachon yashamasamda, xozirgacha
+                    ushbu bank kartalarini ishlataman. Bizning banklar valyutadagi operatsiyalardan 1% atrofida
+                    komissiya olayotgan bir paytda, bankomatdan o’z pulizni chiqarmoqchi bo’lganda …</p>
+            </div>
+        </div>
+        <div class="col-3 before" style="display: flex !important; max-width:inherit !important;">
+            <div>
+                <h5 class="maqolalarTitle margin">Yangi maqolalar</h5>
+                <a href="#" class="server margin">Internet nima? U qanday ishlaydi?</a>
+                <hr class="myBlogHr">
+                <a href="#" class="server1 margin">Haqiqiy IT Bank!</a>
+                <hr class="myBlogHr">
+                <a href="#" class="server1 margin">#9 – Bootstrap. 3-Qism. Veb-dasturlash kursi</a>
+                <hr class="myBlogHr">
+                <a href="#" class="server1 margin">Node.js-da sodda HTTP server yaratamiz</a>
+                <hr class="myBlogHr">
+                <a href="#" class="server1 margin">Dasturlashni o’rganishda tavsiyalar</a>
+                <hr class="myBlogHr">
+            </div>
+        </div>
+    </div> --}}
+</div>
